@@ -20,7 +20,7 @@ public class ExampleActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_example);
 
-        String secretKey = "ZhGXLnyBKkWo3c4R1MLc+d3JOSpCovYBRsoWei6STL+T0gffSHUMUS9qt7zBjA/jt1kMV9es5i10r3gFQV4qnw";
+        String secretKey = "ZhGXLnyBKkWo3c4R1MLc+d3JOSpCovYBRsoWei6STL+T0gffSHUMUS9qt7zBjA/jt1kMV9es5i10r3gFQV4qnw==";
         String apiKey = "APbEY+gpkKM5gQ==";
         WoohooSDK.initialize(apiKey, secretKey, true);
         woohoo = WoohooSDK.getInstance(ExampleActivity.this);
