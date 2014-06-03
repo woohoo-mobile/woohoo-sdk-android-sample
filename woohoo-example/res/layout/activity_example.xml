@@ -6,23 +6,51 @@
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
                 android:paddingBottom="@dimen/activity_vertical_margin"
-                tools:context="com.woohoo.mobile.woohoooffers.sampleapp.MainActivity">
+                tools:context="com.woohoo.mobile.example.app.ExampleActivity">
 
     <Button
             android:id="@+id/button_inc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/get_reward"
-            android:layout_above="@+id/button_start"
             android:layout_marginBottom="15dp"
+            android:layout_marginTop="120dp"
             android:layout_centerHorizontal="true"/>
 
     <Button
             android:id="@+id/button_start"
+            android:visibility="gone"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Start Woohoo Offers Activity"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
+            android:text="Start Woohoo Offers Activity"
+            />
+
+    <TextView
+            android:id="@+id/new_offers"
+            android:visibility="gone"
+            android:layout_below="@+id/button_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/green_button_selected"
+            android:textAllCaps="true"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            />
+
+
+    <TextView
+            android:id="@+id/not_available_text"
+            android:visibility="gone"
+            android:text="@string/offers_not_available"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_inc"
+            android:layout_marginTop="15dp"
             android:layout_centerHorizontal="true"/>
 
 
